@@ -1,0 +1,73 @@
+/* Changing Text Efect */
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-image: url('https://i.pinimg.com/736x/f3/24/66/f32466f22e31fa207fe4517bf1352361.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	font-family: 'Righteous', cursive;
+	color: #ffffff;
+	font-size: 17px;
+}
+
+#wrapper{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#wrapper h2{
+	color: #ffffff;
+	font-size: 40px;
+}
+
+#wrapper p{
+	line-height: 30px;
+}
+
+#wrapper a{
+	background-color: #e84393;
+	padding: 10px 25px;
+	display: inline-block;
+	border-radius: 5px;
+	margin-top: 30px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+span::before{
+	content: '';
+	animation: animate infinite 5s;
+	color: #fd6e6e;
+	padding: 0 5px;
+}
+
+@keyframes animate{
+	0%{
+		content: 'sorry the 21st';
+	}
+
+	25%{
+		content: ' i remember';
+	}
+
+	50%{
+		content: 'the 21st';
+	}
+
+	75%{
+		content: 'Correct?';
+	}
+
+	100%{
+		content: 'about your birthday';
+	}
+}
